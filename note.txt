@@ -1,0 +1,23 @@
+Đây là một môi trường ảo python, mình vừa tạo nó bằng lệnh 
+    python -m venv backend_data_entry_with_AI
+(ở thư mục ngoài)
+
+Tiếp theo, cũng ở thư mục ngoài kích hoạt môi trường ảo này bằng lệnh
+    backend_data_entry_with_AI\Scripts\activate
+(bắt buộc đấy nhé). À, có thể vào thẳng thư mục backend_data_entry_with_AI rồi chạy lệnh
+    Scripts\activate
+
+nhớ cài đủ thư viện
+    pip install fastapi uvicorn pymupdf pytesseract pdf2image pillow
+
+file requirements.txt dùng để chứa các thư viện cài
+pip freeze > requirements.txt dùng để ghi các thư viện đã cài vào file
+pip install -r requirements.txt dùng để cài các thư viện ghi trong file
+pip uninstall -r requirements.txt tương tự, dùng để gỡ
+
+chạy backend bằng lệnh 
+    uvicorn main:app --reload
+    uvicorn main:app --reload --port 8000
+
+
+
